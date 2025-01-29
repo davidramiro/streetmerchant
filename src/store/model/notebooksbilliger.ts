@@ -4,7 +4,7 @@ export const Notebooksbilliger: Store = {
   currency: '€',
   labels: {
     inStock: {
-      container: '.warehouse',
+      container: '.product-detail__availability',
       text: [
         'sofort ab lager',
         'verfügbarkeit: ca. 2-4 werktage',
@@ -13,7 +13,7 @@ export const Notebooksbilliger: Store = {
     },
     maxPrice: {
       container:
-        'form[name="cart_quantity"]  span[class*="product-price__regular"]',
+        '.js-product-price',
       euroFormat: true,
     },
     outOfStock: [
@@ -34,6 +34,10 @@ export const Notebooksbilliger: Store = {
       {
         container: '#product_error_text',
         text: ['leider ist dieser artikel nicht mehr verfügbar.'],
+      },
+      {
+        container: '.product-detail__availability',
+        text: ['bestellbar ab'],
       },
     ],
   },
@@ -277,6 +281,30 @@ export const Notebooksbilliger: Store = {
       model: '5950x',
       series: 'ryzen5950',
       url: 'https://www.notebooksbilliger.de/amd+ryzen+9+5950x+cpu+684033',
+    },
+    {
+      brand: 'asus',
+      model: 'prime',
+      series: '5080',
+      url: 'https://www.notebooksbilliger.de/asus+prime+geforce+rtx+5080+oc+876479',
+    },
+    {
+      brand: 'gigabyte',
+      model: 'windforce',
+      series: '5080',
+      url: 'https://www.notebooksbilliger.de/gigabyte+geforce+rtx+5080+windforce+oc+sff+16g+876603',
+    },
+    {
+      brand: 'gigabyte',
+      model: 'gaming oc',
+      series: '5080',
+      url: 'https://www.notebooksbilliger.de/gigabyte+geforce+rtx+5080+gaming+oc+16g+876606',
+    },
+    {
+      brand: 'asus',
+      model: 'tuf',
+      series: '5080',
+      url: 'https://www.notebooksbilliger.de/asus+tuf+gaming+geforce+rtx+5080+oc+876480',
     },
   ],
   name: 'notebooksbilliger',
